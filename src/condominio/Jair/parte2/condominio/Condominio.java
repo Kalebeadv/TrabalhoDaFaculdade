@@ -16,12 +16,12 @@ public class Condominio {
 	
 
 
-	Condominio(String nome, String cnpj, Endereco endereco, Imovel imoveis) {
+	Condominio(String nome, String cnpj, Endereco endereco, ArrayList<Imovel> imoveis) {
 		super();
 		this.nome = nome;
 		this.cnpj = cnpj;
 		this.endereco = endereco;
-		this.imoveis.add(imoveis);
+		this.imoveis.addAll(imoveis);
 	}
 
 

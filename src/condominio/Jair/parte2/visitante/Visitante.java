@@ -5,11 +5,11 @@ public class Visitante {
 	private String nome;
 	
 	
-	
 	Visitante(String funcao, String nome) {
 		this.funcao = funcao;
 		this.nome = nome;
 	}
+	
 	public String getFuncao() {
 		return funcao;
 	}

@@ -2,23 +2,22 @@ package condominio.Jair.parte2.morador;
 
 import java.util.ArrayList;
 
-import condominio.Jair.parte2.imovel.Imovel;
 
 public class Morador {
 	private String nome;
 	private Boolean responsavelPeloImovel = false;
 	private ArrayList<String> telefone = new ArrayList<String>();
 	private ArrayList<String> email =  new ArrayList<String>();
-	private Imovel imovel;
 	
 	
-	Morador(String nome, Boolean responsavelPeloImovel, String telefone, String email,
-			Imovel imovel) {
+	
+	Morador(String nome, Boolean responsavelPeloImovel, ArrayList<String> telefone, 
+			ArrayList<String> email) {
 		this.nome = nome;
 		this.responsavelPeloImovel = responsavelPeloImovel;
-		this.telefone.add(telefone);
-		this.email.add(email);
-		this.imovel = imovel;
+		this.telefone.addAll(telefone);
+		this.email.addAll(email);
+		
 	}
 
 	public String getNome() {
@@ -37,9 +36,6 @@ public class Morador {
 		return email;
 	}
 	
-	public Imovel getImovel() {
-		return imovel;
-	}
 
 	
 	
