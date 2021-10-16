@@ -9,12 +9,12 @@ import condominio.Jair.parte2.endereco.Endereco;
 import condominio.Jair.parte2.morador.Morador;
 
 public class Imovel {
-	Condominio condominio;
-	String nome;
-	Endereco endereco;
-	ArrayList<Morador> moradores = new ArrayList<Morador>();
-	ArrayList<Animal> animais = new ArrayList<Animal>();
-	ArrayList<Carro> carros = new ArrayList<Carro>();
+	private Condominio condominio;
+	private String nome;
+	private Endereco endereco;
+	private ArrayList<Morador> moradores = new ArrayList<Morador>();
+	private ArrayList<Animal> animais = new ArrayList<Animal>();
+	private ArrayList<Carro> carros = new ArrayList<Carro>();
 	
 	
 	

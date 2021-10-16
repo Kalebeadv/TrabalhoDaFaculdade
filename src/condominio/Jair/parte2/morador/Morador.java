@@ -5,11 +5,11 @@ import java.util.ArrayList;
 import condominio.Jair.parte2.imovel.Imovel;
 
 public class Morador {
-	String nome;
-	Boolean responsavelPeloImovel = false;
-	ArrayList<String> telefone = new ArrayList<String>();
-	ArrayList<String> email =  new ArrayList<String>();
-	Imovel imovel;
+	private String nome;
+	private Boolean responsavelPeloImovel = false;
+	private ArrayList<String> telefone = new ArrayList<String>();
+	private ArrayList<String> email =  new ArrayList<String>();
+	private Imovel imovel;
 	
 	
 	Morador(String nome, Boolean responsavelPeloImovel, String telefone, String email,

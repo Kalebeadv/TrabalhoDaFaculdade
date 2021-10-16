@@ -5,11 +5,11 @@ import condominio.Jair.parte2.morador.Morador;
 
 public class Carro {
 	
-	Morador pertenceAoMorador;
-	String modelo;
-	String tipo;
-	String marca;
-	Imovel imovelPertencente;
+	private Morador pertenceAoMorador;
+	private String modelo;
+	private String tipo;
+	private String marca;
+	private Imovel imovelPertencente;
 	
 	
 	Carro(Morador pertenceAoMorador, String modelo, String tipo, String marca, 

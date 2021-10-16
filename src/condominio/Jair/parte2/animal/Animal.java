@@ -5,10 +5,10 @@ import condominio.Jair.parte2.morador.Morador;
 
 public class Animal {
 	
-	Morador dono;
-	String tipo;
-	String nome;
-	Imovel pertenceAoImovel;
+	private Morador dono;
+	private String tipo;
+	private String nome;
+	private Imovel pertenceAoImovel;
 	
 	
 	

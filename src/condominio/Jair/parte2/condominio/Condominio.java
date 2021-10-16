@@ -7,10 +7,10 @@ import condominio.Jair.parte2.imovel.Imovel;
 
 public class Condominio {
 	
-	String nome;
-	String cnpj;
-	Endereco endereco;
-	ArrayList<Imovel> imoveis = new ArrayList<Imovel>();
+	private String nome;
+	private String cnpj;
+	private Endereco endereco;
+	private ArrayList<Imovel> imoveis = new ArrayList<Imovel>();
 	
 	
 	

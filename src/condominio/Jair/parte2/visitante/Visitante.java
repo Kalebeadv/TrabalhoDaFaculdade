@@ -1,8 +1,8 @@
 package condominio.Jair.parte2.visitante;
 
 public class Visitante {
-	String funcao;
-	String nome;
+	private String funcao;
+	private String nome;
 	
 	
 	
