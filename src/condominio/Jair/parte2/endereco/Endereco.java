@@ -1,14 +1,14 @@
-package condominio.Jair.parte2;
+package condominio.Jair.parte2.endereco;
 
 public class Endereco {
 	
-	private String pais;
-	private String estado;
-	private String cidade;
-	private String bairro;
-	private String lagradouro;
-	private String cep;
-	private String numeroDaCasa;
+	String pais;
+	String estado;
+	String cidade;
+	String bairro;
+	String lagradouro;
+	String cep;
+	String numeroDaCasa;
 	
 	
 	public String getPais() {
