@@ -17,7 +17,7 @@ public class Condominio {
 
 
 	Condominio(String nome, String cnpj, Endereco endereco, ArrayList<Imovel> imoveis) {
-		super();
+		
 		this.nome = nome;
 		this.cnpj = cnpj;
 		this.endereco = endereco;

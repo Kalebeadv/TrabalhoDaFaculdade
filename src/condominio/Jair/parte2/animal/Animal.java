@@ -5,26 +5,27 @@ import condominio.Jair.parte2.morador.Morador;
 
 public class Animal {
 	
+	private String nome;
 	private Morador dono;
 	private String tipo;
-	private String nome;
 	private Imovel pertenceAoImovel;
 	
-	
-	
-	Animal(Morador dono, String tipo, String nome, Imovel pertenceAoImovel) {
+	Animal(String nome, Morador dono, String tipo, Imovel pertenceAoImovel) {
+		
+		this.nome = nome;
 		this.dono = dono;
 		this.tipo = tipo;
-		this.nome = nome;
 		this.pertenceAoImovel = pertenceAoImovel;
 	}
 	
 	public Morador getDono() {
 		return dono;
 	}
+	
 	public String getTipo() {
 		return tipo;
 	}
+	
 	public String getNome() {
 		return nome;
 	}

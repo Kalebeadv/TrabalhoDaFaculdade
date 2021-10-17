@@ -1,6 +1,6 @@
 package condominio.Jair.parte2.builder;
 
-public interface Builder {
+public interface Builde {
 	void setNome(String nome);
 	
 }

@@ -2,10 +2,10 @@ package condominio.Jair.parte2.morador;
 
 import java.util.ArrayList;
 
-import condominio.Jair.parte2.builder.Builder;
+import condominio.Jair.parte2.builder.Builde;
 
 
-public class BuilderMorador implements Builder {
+public class BuilderMorador implements Builde {
 
 	private String nome;
 	private Boolean responsavelPeloImovel = false;
@@ -33,7 +33,7 @@ public class BuilderMorador implements Builder {
 		this.email.add(email);
 	}
 	
-	public Morador getMorador()
+	public Morador getBuilderMorador()
 	{
 		return new Morador(nome,responsavelPeloImovel,telefone,email);
 	}

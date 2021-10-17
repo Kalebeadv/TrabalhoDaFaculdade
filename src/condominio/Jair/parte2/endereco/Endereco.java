@@ -11,6 +11,18 @@ public class Endereco {
 	private String numeroDaCasa;
 	
 	
+	
+	Endereco(String pais, String estado, String cidade, String bairro, String lagradouro, 
+			String cep, String numeroDaCasa) {
+		
+		this.pais = pais;
+		this.estado = estado;
+		this.cidade = cidade;
+		this.bairro = bairro;
+		this.lagradouro = lagradouro;
+		this.cep = cep;
+		this.numeroDaCasa = numeroDaCasa;
+	}
 	public String getPais() {
 		return pais;
 	}

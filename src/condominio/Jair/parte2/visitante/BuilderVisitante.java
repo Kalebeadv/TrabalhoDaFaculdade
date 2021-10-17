@@ -2,7 +2,7 @@ package condominio.Jair.parte2.visitante;
 
 import condominio.Jair.parte2.builder.*;
 
-public class BuilderVisitante implements Builder {
+public class BuilderVisitante implements Builde {
 	
 	private String funcao;
 	private String nome;
@@ -19,7 +19,7 @@ public class BuilderVisitante implements Builder {
 		this.nome = nome;
 	}
 	
-	public Visitante getVisitante()
+	public Visitante getBuilderVisitante()
 	{
 		return new Visitante(funcao,nome);
 	}
