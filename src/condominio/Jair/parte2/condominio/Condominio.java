@@ -40,5 +40,15 @@ public class Condominio {
 	{
 		this.imoveis.add(imovel);
 	}
-
+	
+	public void exibeInfo() {
+		System.out.println("______________________________");
+		System.out.println("__Informaçoes do Condominio___");
+		System.out.println("Nome do Condominio: "+this.nome);
+		System.out.println("CNPJ..............: "+this.cnpj);
+		System.out.print("Imoveis pertencentes: " );
+		imoveis.forEach(imo -> {System.out.println(imo.getNome());});
+		endereco.exibeInfo();
+		System.out.println("______________________________");
+	}
 }

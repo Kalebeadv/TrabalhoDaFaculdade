@@ -37,6 +37,20 @@ public class Morador {
 		return email;
 	}
 	
+	public void exibeInfo() {
+		System.out.println("__________________________");
+		System.out.println("__Informaçoes do Morador__");
+		System.out.println("Nome do Morador..: " + this.nome);
+		System.out.print("É responsavel....? ");
+		if(this.responsavelPeloImovel) System.out.println("Sim"); 
+		else System.out.println("Não");
+		System.out.print("E-mail........: " );
+		email.forEach(mail -> {System.out.print(mail + ", ");});
+		System.out.print("\nTelefone....: ");
+		telefone.forEach(tel -> {System.out.print(tel + ", ");});
+		System.out.println("\n__________________________");
+	}
+	
 
 	
 	

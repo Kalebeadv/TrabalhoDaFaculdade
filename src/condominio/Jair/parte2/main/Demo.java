@@ -49,10 +49,14 @@ public class Demo {
 		imovel.inserirAnimal(animal);
 		imovel.inserirCarro(carro);
 		imovel.inserirVisitante(visitante);
-		
 		condominio.inserirImovel(imovel);
 		
-		
+		condominio.exibeInfo();
+		carro.exibeInfo();
+		animal.exibeInfo();
+		imovel.exibeInfo();
+		morador.exibeInfo();
+		visitante.exibeInfo();
 		//Coisas para fazer, fazer um metodo exibeINFO em todas as classes base.
 		//Ajeitar tirar os arrayList dos contrutores e dos builders (APENAS PARA CLASSES
 		//QUE POSSUI ARRAYLIST DE OBJETOS OUTRA CLASSE ex. Imovel,Condominio e etc.

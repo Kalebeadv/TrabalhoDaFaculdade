@@ -17,7 +17,13 @@ public class Visitante {
 		return nome;
 	}
 	
-	
+	public void exibeInfo() {
+		System.out.println("______________________________");
+		System.out.println("___Informaçoes do Visitante___");
+		System.out.println("Função..: " + this.funcao);
+		System.out.println("Nome....: " + this.nome);
+		System.out.println("______________________________");
+	}
 	
 
 }

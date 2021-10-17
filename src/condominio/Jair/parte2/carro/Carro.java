@@ -42,7 +42,17 @@ public class Carro {
 		return imovelPertencente;
 	}
 
-	
+	public void exibeInfo() {
+		System.out.println("________________________________");
+		System.out.println("______Informaçoes do Carro______");
+		System.out.println("Tipo do carro..: "+this.tipo);
+		System.out.println("Modelo do carro: "+this.modelo);
+		System.out.println("Marca do carro.: "+this.marca);
+		System.out.println("Dono do carro..: "+this.pertenceAoMorador.getNome());
+		System.out.println("Imovel do carro: "+this.imovelPertencente.getNome());
+		System.out.println("________________________________");
+
+	}
 	
 	
 

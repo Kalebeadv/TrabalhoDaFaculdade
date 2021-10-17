@@ -27,6 +27,7 @@ public class Director {
 	{
 		imovel.setNome("Imovel do Juliano");
 		imovel.setEndereco(endereco);
+		
 	}
 	
 	public void createEnderecoSalvador(BuilderEndereco endereco)
@@ -36,7 +37,8 @@ public class Director {
 		endereco.setCidade("Salvador");
 		endereco.setCep("69888-123");
 		endereco.setLagradouro("Rua das palmeiras");
-		endereco.setPais("5464");
+		endereco.setBairro("FinalValendo10");
+		endereco.setNumeroDaCasa("5464");
 		endereco.getBuilderEndereco();
 	}
 	
@@ -44,7 +46,6 @@ public class Director {
 	{
 		condominio.setCnpj("1234567-8");
 		condominio.setEndereco(endereco);
-	
 		condominio.setNome("Condominio do Jair");
 		condominio.getBuilderCondominio();
 	}
@@ -61,6 +62,7 @@ public class Director {
 	public void createCarroUno(BuilderCarro carro, Morador morador, Imovel imovel)
 	{
 		carro.setImovelPertencente(imovel);
+		carro.setPertenceAoMorador(morador);
 		carro.setMarca("Uno 2010");
 		carro.setModelo("21219QW");
 		carro.setNome("Botafogo");

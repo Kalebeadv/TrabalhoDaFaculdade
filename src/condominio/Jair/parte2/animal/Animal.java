@@ -35,7 +35,15 @@ public class Animal {
 	}
 
 	
-	
+	public void exibeInfo() {
+		System.out.println("________________________________");
+		System.out.println("_____Informaçoes do Animal______");
+		System.out.println("Animal............: "+this.tipo);
+		System.out.println("Nome do animal....: "+this.nome);
+		System.out.println("Dono do animal....: "+this.dono.getNome());
+		System.out.println("Pertence ao imovel: "+this.pertenceAoImovel.getNome());
+		System.out.println("________________________________");
+	}
 	
 	
 	

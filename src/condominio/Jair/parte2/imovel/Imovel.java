@@ -35,24 +35,17 @@ public class Imovel {
 		return endereco;
 	}
 
-
-
 	public ArrayList<Morador> getMoradores() {
 		return moradores;
 	}
-
-
 
 	public ArrayList<Animal> getAnimais() {
 		return animais;
 	}
 
-
-
 	public ArrayList<Carro> getCarros() {
 		return carros;
 	}
-
 
 	public ArrayList<Visitante> getVisitantes() {
 		return visitantes;
@@ -78,11 +71,20 @@ public class Imovel {
 		this.visitantes.add(visitante);
 	}
 	
-	public void exibeINFO()
-	{
-		System.out.print("Moradores : ");
-		moradores.forEach(teste -> {System.out.println(teste.toString());});
-		System.out.println("");
+	public void exibeInfo() {
+		System.out.println("__________________________");
+		System.out.println("__Informaçoes do Imovel___");
+		System.out.println("Imovel.....: "+ this.nome);
+		System.out.print("Moradores....: " );
+		moradores.forEach(mora -> {System.out.println(mora.getNome());});
+		System.out.print("Animais......: " );
+		animais.forEach(ani -> {System.out.println(ani.getNome());});
+		System.out.print("Carros.......: " );
+		carros.forEach(car -> {System.out.println(car.getModelo());});
+		System.out.print("Visitantes...: " );
+		visitantes.forEach(visi -> {System.out.println(visi.getNome());});
+		endereco.exibeInfo();
+		System.out.println("__________________________");
 	}
 	
 	

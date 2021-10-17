@@ -10,8 +10,6 @@ public class Endereco {
 	private String cep;
 	private String numeroDaCasa;
 	
-	
-	
 	Endereco(String pais, String estado, String cidade, String bairro, String lagradouro, 
 			String cep, String numeroDaCasa) {
 		
@@ -23,6 +21,7 @@ public class Endereco {
 		this.cep = cep;
 		this.numeroDaCasa = numeroDaCasa;
 	}
+	
 	public String getPais() {
 		return pais;
 	}
@@ -45,6 +44,16 @@ public class Endereco {
 		return numeroDaCasa;
 	}
 	
-	
+	public void exibeInfo() {
+
+		System.out.println("___________Enereço___________");
+		System.out.println("CEP.............: "+this.cep);
+		System.out.println("País............: "+this.pais);
+		System.out.println("Estado..........: "+this.estado);
+		System.out.println("Cidade..........: "+this.cidade);
+		System.out.println("Bairro..........: "+this.bairro);
+		System.out.println("Lagradouro......: "+this.lagradouro);
+		System.out.println("Numero do imovel: "+this.numeroDaCasa);
+	}
 
 }
