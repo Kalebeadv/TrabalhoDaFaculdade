@@ -2,6 +2,7 @@ package condominio.Jair.parte2.imovel;
 
 import java.util.ArrayList;
 
+
 import condominio.Jair.parte2.animal.Animal;
 import condominio.Jair.parte2.carro.Carro;
 import condominio.Jair.parte2.endereco.Endereco;

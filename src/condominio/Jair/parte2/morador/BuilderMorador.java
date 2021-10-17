@@ -37,4 +37,11 @@ public class BuilderMorador implements Builde {
 	{
 		return new Morador(nome,responsavelPeloImovel,telefone,email);
 	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Nome: " + this.nome + "\nResponsável pelo imovel: " + this.responsavelPeloImovel
+				+ "\nTelefones: " + this.telefone.get(0);
+	}
 }

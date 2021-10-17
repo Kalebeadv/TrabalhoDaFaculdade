@@ -35,6 +35,8 @@ public class Morador {
 	public ArrayList<String> getEmail() {
 		return email;
 	}
+
+	
 	
 	
 
