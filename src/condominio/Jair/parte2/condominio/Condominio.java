@@ -11,17 +11,14 @@ public class Condominio {
 	private String cnpj;
 	private Endereco endereco;
 	private ArrayList<Imovel> imoveis = new ArrayList<Imovel>();
-	
-	
-	
 
 
-	Condominio(String nome, String cnpj, Endereco endereco, ArrayList<Imovel> imoveis) {
+	Condominio(String nome, String cnpj, Endereco endereco) {
 		
 		this.nome = nome;
 		this.cnpj = cnpj;
 		this.endereco = endereco;
-		this.imoveis.addAll(imoveis);
+		
 	}
 
 
@@ -39,7 +36,9 @@ public class Condominio {
 		return endereco;
 	}
 	
-	
-	
+	public void inserirImovel(Imovel imovel)
+	{
+		this.imoveis.add(imovel);
+	}
 
 }

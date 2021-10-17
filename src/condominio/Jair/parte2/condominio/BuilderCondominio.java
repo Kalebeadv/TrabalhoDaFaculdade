@@ -11,7 +11,7 @@ public class BuilderCondominio implements Builde {
 	private String nome;
 	private String cnpj;
 	private Endereco endereco;
-	private ArrayList<Imovel> imoveis = new ArrayList<Imovel>();
+
 
 	@Override
 	public void setNome(String nome) {
@@ -26,13 +26,11 @@ public class BuilderCondominio implements Builde {
 		this.endereco = endereco;
 	}
 
-	public void setImoveis(ArrayList<Imovel> imoveis) {
-		this.imoveis = imoveis;
-	}
+	
 	
 	public Condominio getBuilderCondominio()
 	{
-		return new Condominio(nome,cnpj,endereco,imoveis);
+		return new Condominio(nome,cnpj,endereco);
 	}
 
 }

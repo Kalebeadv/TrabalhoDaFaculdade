@@ -24,16 +24,35 @@ public class Demo {
 		BuilderAnimal builderAnimal = new BuilderAnimal();
 		
 		
-		
-		Animal animal = builderAnimal.getBuilderAnimal();
-		Carro carro = builderCarro.getBuilderCarro();
-		Condominio condominio = builderCondominio.getBuilderCondominio();
-		Endereco endereco = builderEndereco.getBuilderEndereco();
-		Imovel imovel = builderImovel.getBuilderImovel();
+		director.createUmMoradores(builderMorador);
 		Morador morador = builderMorador.getBuilderMorador();
+		
+		director.createEnderecoSalvador(builderEndereco);
+		Endereco endereco = builderEndereco.getBuilderEndereco();
+		
+		director.createImovelJuliano(builderImovel, endereco);
+		Imovel imovel = builderImovel.getBuilderImovel();
+		
+		director.createAnimalCachorroBolao(builderAnimal, morador, imovel);
+		Animal animal = builderAnimal.getBuilderAnimal();
+		
+		director.createCarroUno(builderCarro, morador, imovel);
+		Carro carro = builderCarro.getBuilderCarro();
+	
+		director.createVisitanteHospede(builderVisitante);
 		Visitante visitante = builderVisitante.getBuilderVisitante();
 		
-
+		director.createCondominioDoJair(builderCondominio, endereco);
+		Condominio condominio = builderCondominio.getBuilderCondominio();
+		
+		imovel.InserirMorador(morador);
+		imovel.inserirAnimal(animal);
+		imovel.inserirCarro(carro);
+		imovel.inserirVisitante(visitante);
+		
+		condominio.inserirImovel(imovel);
+		
+		
 		//Coisas para fazer, fazer um metodo exibeINFO em todas as classes base.
 		//Ajeitar tirar os arrayList dos contrutores e dos builders (APENAS PARA CLASSES
 		//QUE POSSUI ARRAYLIST DE OBJETOS OUTRA CLASSE ex. Imovel,Condominio e etc.
