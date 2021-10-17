@@ -11,13 +11,14 @@ public class Morador {
 	
 	
 	
-	Morador(String nome, Boolean responsavelPeloImovel, ArrayList<String> telefone, 
+	
+	Morador(String nome, Boolean responsavelPeloImovel, ArrayList<String> telefone,
 			ArrayList<String> email) {
+		
 		this.nome = nome;
 		this.responsavelPeloImovel = responsavelPeloImovel;
 		this.telefone.addAll(telefone);
 		this.email.addAll(email);
-		
 	}
 
 	public String getNome() {
@@ -35,9 +36,6 @@ public class Morador {
 	public ArrayList<String> getEmail() {
 		return email;
 	}
-
-	
-	
 	
 
 	

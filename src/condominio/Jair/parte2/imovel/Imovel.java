@@ -19,17 +19,10 @@ public class Imovel {
 	private ArrayList<Visitante> visitantes = new ArrayList<Visitante>();
 	
 	
-	Imovel(String nome, Endereco endereco, 
-			ArrayList <Morador> moradores,
-			ArrayList<Animal> animais, ArrayList<Carro> carros,
-			ArrayList <Visitante> visitante) {
+	Imovel(String nome, Endereco endereco) {
 		
 		this.nome = nome;
 		this.endereco = endereco;
-		this.moradores.addAll(moradores);
-		this.animais.addAll(animais);
-		this.carros.addAll(carros);
-		this.visitantes.addAll(visitantes);
 	}
 	
 	
@@ -61,9 +54,35 @@ public class Imovel {
 	}
 
 
-
 	public ArrayList<Visitante> getVisitantes() {
 		return visitantes;
+	}
+	
+	public void InserirMorador(Morador morador)
+	{
+		this.moradores.add(morador);
+	}
+	
+	public void inserirAnimal(Animal animal)
+	{
+		this.animais.add(animal);
+	}
+	
+	public void inserirCarro(Carro carro)
+	{
+		this.carros.add(carro);
+	}
+	
+	public void inserirVisitante(Visitante visitante)
+	{
+		this.visitantes.add(visitante);
+	}
+	
+	public void exibeINFO()
+	{
+		System.out.print("Moradores : ");
+		moradores.forEach(teste -> {System.out.println(teste.toString());});
+		System.out.println("");
 	}
 	
 	

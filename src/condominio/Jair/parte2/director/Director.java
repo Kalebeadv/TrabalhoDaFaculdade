@@ -23,10 +23,12 @@ public class Director {
 		
 	}
 	
-	public void AdicionandoMoradorNoImovel(Morador morador, BuilderImovel imovel)
+	public void CreateImovel(BuilderImovel imovel, Endereco endereco)
 	{
-		imovel.setMoradores(morador);
+		imovel.setNome("Imovel do Juliano");
+		imovel.setEndereco(endereco);
 	}
+	
 	
 
 }
