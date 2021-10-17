@@ -1,10 +1,9 @@
 package condominio.Jair.parte2.condominio;
 
-import java.util.ArrayList;
+
 
 import condominio.Jair.parte2.builder.*;
 import condominio.Jair.parte2.endereco.Endereco;
-import condominio.Jair.parte2.imovel.Imovel;
 
 public class BuilderCondominio implements Builde {
 	

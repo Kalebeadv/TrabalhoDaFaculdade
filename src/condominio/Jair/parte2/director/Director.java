@@ -1,7 +1,6 @@
 package condominio.Jair.parte2.director;
 
 import condominio.Jair.parte2.animal.*;
-import condominio.Jair.parte2.builder.Builde;
 import condominio.Jair.parte2.carro.*;
 import condominio.Jair.parte2.endereco.*;
 import condominio.Jair.parte2.morador.*;
