@@ -27,6 +27,8 @@ public class Director {
 	{
 		imovel.setNome("Imovel do Juliano");
 		imovel.setEndereco(endereco);
+		imovel.getBuilderImovel();
+		
 		
 	}
 	
@@ -72,8 +74,9 @@ public class Director {
 	
 	public void createVisitanteHospede(BuilderVisitante visitante)
 	{
-		visitante.Setfuncao("Hóspede");
+		visitante.Setfuncao("HÃ³spede");
 		visitante.setNome("Maria");
+		visitante.getBuilderVisitante();
 	}
 	
 	
