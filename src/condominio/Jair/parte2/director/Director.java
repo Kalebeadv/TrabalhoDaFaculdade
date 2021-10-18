@@ -26,6 +26,7 @@ public class Director {
 	{
 		imovel.setNome("Imovel do Juliano");
 		imovel.setEndereco(endereco);
+		imovel.getBuilderImovel();
 		
 	}
 	
@@ -73,6 +74,7 @@ public class Director {
 	{
 		visitante.Setfuncao("Hóspede");
 		visitante.setNome("Maria");
+		visitante.getBuilderVisitante();
 	}
 	
 	
